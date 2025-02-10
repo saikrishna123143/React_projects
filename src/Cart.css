@@ -1,0 +1,147 @@
+.cart-container {
+  text-align: center;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.cart-table th, .cart-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.cart-table th {
+  background: #007bff;
+  color: white;
+}
+.total{
+  font-size:20px;
+  color:#cc4c08;
+}
+.qty-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.qty-button:hover {
+  background: #0056b3;
+}
+
+.remove-button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.remove-button:hover {
+  background: #c82333;
+}
+
+.cart-summary {
+  border:2px solid black;
+  margin-top: 20px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.discount-section,
+.coupon-section,
+.coupon-applied {
+  margin-bottom: 15px;
+}
+.discount-section
+{
+  color:#19c951;
+}
+.coupon-section
+{
+  color:#f12c0a;
+}
+.coupon-applied
+{
+  color:#6a19ab;
+  font-size:20px;
+}
+
+.discount-buttons button {
+  background: #ffc107;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.discount-buttons button:hover {
+  background: #e0a800;
+}
+.applycoup {
+  background:#6a19ab;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.applycoup:hover {
+  background: #218838;
+}
+#couplabel
+{
+  color:#6a19ab;
+  font-size:25px;
+}
+
+.final-amount {
+  font-size: 40px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.empty-cart {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+  margin-top: 20px;
+}
+.purchase
+{
+  background:#06e315;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}

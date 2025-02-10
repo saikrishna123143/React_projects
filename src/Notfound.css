@@ -1,0 +1,37 @@
+/* Notfound Page Styles */
+.notfound-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .notfound-heading {
+    font-size: 3rem;
+    color: #dc3545;
+    margin-bottom: 10px;
+  }
+  
+  .notfound-text {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+  }
+  
+  .notfound-image {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .redirect-text {
+    font-size: 1rem;
+    color: #007bff;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
