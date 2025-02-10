@@ -11,6 +11,7 @@ import NotFound from "./Notfound";
 import Login from "./Login";
 import { logout } from "./Store";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function App() {
   let cartItems = useSelector(state => state.cart);
@@ -22,18 +23,26 @@ function App() {
     <BrowserRouter>
       <div className="container-fluid d-flex flex-column min-vh-100" style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: '#f5f5f5' }}>
         {/* Header Section */}
-        <header className="text-white text-center py-4 shadow-sm" style={{ backgroundColor: '#343a40', fontSize: '2rem', fontWeight: 'bold' }}>
+        <header className="text-white text-center py-4 shadow-sm" style={{ backgroundColor: '#343a40', fontSize: '1.75rem', fontWeight: 'bold' }}>
           <h1>🛒 Terminator Super Market</h1>
         </header>
 
         {/* Navigation Bar */}
         <nav className="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm">
-          <div className="container">
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <div className="container-fluid">
+            <button 
+              className="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation"
+            >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse justify-content-lg-center" id="navbarNav">
-              <ul className="navbar-nav text-center text-lg-start gap-lg-3 mx-auto">
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav mx-auto text-center gap-2">
                 <li className="nav-item"><Link to="/" className="nav-link text-dark fw-semibold">Home</Link></li>
                 <li className="nav-item"><Link to="/VegItems" className="nav-link text-dark fw-semibold">Veg Items</Link></li>
                 <li className="nav-item"><Link to="/NonVegItems" className="nav-link text-dark fw-semibold">Non-Veg Items</Link></li>
@@ -42,7 +51,7 @@ function App() {
                 <li className="nav-item"><Link to="/Orders" className="nav-link text-dark fw-semibold">Orders</Link></li>
                 <li className="nav-item"><Link to="/contact" className="nav-link text-dark fw-semibold">Contact</Link></li>
               </ul>
-              <ul className="navbar-nav ms-lg-4 text-center">
+              <ul className="navbar-nav ms-lg-3 text-center">
                 {isAuthenticated ? (
                   <li className="nav-item d-flex flex-column flex-lg-row align-items-center">
                     <span className="text-dark fw-semibold me-lg-3 mb-2 mb-lg-0">Welcome, {user}</span>
